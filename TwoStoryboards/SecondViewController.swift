@@ -23,10 +23,8 @@ class SecondViewController: UIViewController {
     
     
     @IBAction func buttonTapped(_ sender: UIButton) {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "Main") as UIViewController
-        self.present(controller, animated: true, completion: nil)
+                
+        self.dismiss(animated: true, completion: nil)
         
         
     }
