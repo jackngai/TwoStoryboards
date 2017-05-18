@@ -19,10 +19,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func buttonTapped(_ sender: UIButton) {
         
+        let storyboard = UIStoryboard(name: "Second", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "SecondViewController") as UIViewController
         
+        self.present(controller, animated: true, completion: nil)
     }
 
 }
